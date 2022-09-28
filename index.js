@@ -1,15 +1,15 @@
 const updateScreen = (value)=>{
-    document.getElementById("screen").value+=value;
-    document.getElementById("enteredDigit").value = value;
+    document.getElementById("screen1").value+=value;
+    document.getElementById("screen2").value = value;
 }
 
 const clearScreen = ()=>{
-    document.getElementById("screen").value="";
-    document.getElementById("enteredDigit").value="0";
+    document.getElementById("screen1").value="";
+    document.getElementById("screen2").value="0";
 }
 
 const result = ()=>{
-   var val = document.getElementById("screen").value;
-   document.getElementById("screen").value = val+'='+ eval(val);
-   document.getElementById("enteredDigit").value=eval(val);
+   var val = document.getElementById("screen1").value;
+   document.getElementById("screen1").value = val+'='+ eval(val);
+   document.getElementById("screen2").value=eval(val);
 }
