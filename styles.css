@@ -100,4 +100,9 @@ button:hover{
     width: 100%; 
 }
 
+header{
+    text-align: center;
+    font-size: medium;
+}
+
 
