@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>JavaScript Calculator Asutosh</title>
+    </head>
+    <body>
+        <div class="calc-body">
+            <table>
+                <tr>
+                    <td><input type="text" id="screen" disabled></input></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="enteredDigit" disabled value="0"></input></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="AC" onClick = clearScreen()></input></td>
+                    <td><input type="button" value="/" onClick = "updateScreen('/')"></input></td>
+                    <td><input type="button" value="x" onClick = "updateScreen('*')"></input></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="7" onClick = updateScreen(7)></input></td>
+                    <td><input type="button" value="8" onClick = updateScreen(8)></input></td>
+                    <td><input type="button" value="9" onClick = updateScreen(9)></input></td>
+                    <td><input type="button" value="-" onClick = "updateScreen('-')"></input></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="4" onClick = updateScreen(4)></input></td>
+                    <td><input type="button" value="5" onClick = updateScreen(5)></input></td>
+                    <td><input type="button" value="6" onClick = updateScreen(6)></input></td>
+                    <td><input type="button" value="+" onClick = "updateScreen('+')"></input></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="1" onClick = updateScreen(1)></input></td>
+                    <td><input type="button" value="2" onClick = updateScreen(2)></input></td>
+                    <td><input type="button" value="3" onClick = updateScreen(3)></input></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="0" onClick = updateScreen(0)></input></td>
+                    <td><input type="button" value="." onClick = "updateScreen('.')"></input></td>
+                    <td><input type="button" value="=" onClick = result()></input></td>
+                </tr>
+                </tr>
+            </table>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
