@@ -10,6 +10,13 @@ const clearScreen = ()=>{
 
 const result = ()=>{
    var val = document.getElementById("screen1").value;
-   document.getElementById("screen1").value = val+'='+ eval(val);
-   document.getElementById("screen2").value=eval(val);
+
+   if (val == ""){
+        document.getElementById("screen1").value = "NaN";
+        document.getElementById("screen2").value ="NaN";
+   }else{
+        document.getElementById("screen1").value = val +'=' + eval(val);
+        document.getElementById("screen2").value = eval(val);
+   }
+
 }
